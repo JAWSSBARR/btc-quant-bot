@@ -1,0 +1,20 @@
+{
+  "version": "2.0",
+  "description": "Persistent analytical baseline carried between runs. Update market structure fields as the cycle evolves.",
+  "market_structure": {
+    "all_time_high": 126200,
+    "all_time_high_date": "2025-10",
+    "cycle_low": 60000,
+    "cycle_low_date": "2026-02"
+  },
+  "framework": {
+    "axes": ["technical", "derivatives", "onchain", "macro"],
+    "actions": ["LONG", "SHORT", "WAIT"],
+    "rules": [
+      "Always assign explicit probability weights to scenarios.",
+      "Never recommend a position without an invalidation level.",
+      "Weight macro lower when on-chain and derivatives strongly agree."
+    ]
+  },
+  "notes": "Replace these placeholder values with your own evolving thesis. This file is the bot's memory between runs."
+}
